@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--很多按钮，可能需要滑动，所以需要放在ScrollView控件内部-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <!-- 正常大小按钮 -->
+        <Button android:id="@+id/button_normal"
+            android:text="@string/buttons_1_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- 小按钮 -->
+        <Button android:id="@+id/button_small"
+            style="?android:attr/buttonStyleSmall"
+            android:text="@string/buttons_1_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+        <!-- 触发按钮，通常有两种状态，代表开和关
+        	 android:textOff  按钮未选中时，显示该属性定义的文本
+        	 android:textOn   按钮被选中时，显示该属性定义的文本 -->       
+        <ToggleButton android:id="@+id/button_toggle"
+            android:text="@string/buttons_1_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            
+    </LinearLayout>
+    
+</ScrollView>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--改变View可见性的实例演示，请参考相应的Java代码。 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<!--一个线性垂直布局，包含三个TextView对象 -->
+    <LinearLayout
+      android:orientation="vertical"
+      android:background="@drawable/box"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      
+	   <!--一个背景色为红色的TextView对象 -->
+      <TextView
+          android:background="@drawable/red"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:visibility="visible"                    
+          android:text="@string/visibility_1_view_1"/>
+
+	   <!--一个背景色为绿色的TextView对象 -->
+      <TextView android:id="@+id/victim"
+          android:background="@drawable/green"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:visibility="visible"          
+          android:text="@string/visibility_1_view_2"/>
+          
+	   <!--一个背景色为蓝色的TextView对象 -->
+      <TextView
+          android:background="@drawable/blue"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:visibility="visible"                    
+          android:text="@string/visibility_1_view_3"/>
+
+    </LinearLayout>
+
+	<!--一个线性水平布局，包含三个Button对象 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button android:id="@+id/vis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/visibility_1_vis"/>
+
+        <Button android:id="@+id/invis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/visibility_1_invis"/>
+
+        <Button android:id="@+id/gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/visibility_1_gone"/>
+
+    </LinearLayout>
+</LinearLayout>

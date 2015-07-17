@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+     <!-- ImageButton，引用android系统内置图标sym_action_call（拨打电话）作为按钮图标  -->
+    <ImageButton
+    	android:id="@+id/myImageButton01"
+    	android:layout_width="100dip"
+    	android:layout_height="50dip"
+    	android:src="@android:drawable/sym_action_call" />
+
+     <!-- ImageButton，引用android系统内置图标sym_action_chat（聊天）作为按钮图标  -->
+   	<ImageButton
+    	android:id="@+id/myImageButton02"   	
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:src="@android:drawable/sym_action_chat" />	
+
+     <!-- ImageButton，引用android系统内置图标sym_action_email（邮件）作为按钮图标 -->
+   	<ImageButton
+     	android:id="@+id/myImageButton03"   	  	
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:src="@android:drawable/sym_action_email" />	
+    	
+     <!-- ImageButton，引用自定义图标作为按钮图标 -->
+   	<ImageButton
+     	android:id="@+id/myImageButton04"   	  	
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:src="@android:drawable/btn_star" />	    	
+</LinearLayout>

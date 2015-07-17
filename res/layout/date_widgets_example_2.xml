@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+	
+	 <!-- 内嵌日期选择控件 -->
+    <DatePicker android:id="@+id/datePicker"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+      
+     <!-- 内嵌时间选择控件 -->  
+    <TimePicker android:id="@+id/timePicker"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+	 
+	 <!-- 日期和时间显示区 -->
+    <TextView android:id="@+id/dateDisplay"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"            
+            android:paddingLeft="4dip"
+            android:text="@string/date_widgets_example_dateDisplay_text"/>
+</LinearLayout>

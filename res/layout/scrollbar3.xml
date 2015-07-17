@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 演示如何使用 ScrollView 控件 -->
+
+<!-- 这里演示了5个 ScrollView控件，并分别自定义了它们的属性 -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- ScrollView 控件1 -->
+        <!-- android:background="#FF0000" 设置滚动条背景颜色为 #FF0000 -->
+        <ScrollView
+            android:layout_width="100dip"
+            android:layout_height="120dip"
+            android:background="#FF0000">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scrollbar_2_text" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scrollbar_2_text" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scrollbar_2_text" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scrollbar_2_text" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scrollbar_2_text" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scrollbar_2_text" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scrollbar_2_text" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scrollbar_2_text" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scrollbar_2_text" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scrollbar_2_text" />
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- ScrollView 控件2 -->
+        <!-- android:background="##00FF00" 设置滚动条背景颜色为 ##00FF00 -->
+        <!-- android:paddingRight="12dip" 设置ScrollView内部的控件距离ScrollView右边界 12dip -->
+        <ScrollView
+            android:layout_width="100dip"
+            android:layout_height="120dip"
+            android:background="#00FF00"
+            android:paddingRight="12dip">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/scrollbar_3_text"
+                android:textColor="#000000"
+                android:background="#60AA60" />
+        </ScrollView>
+
+        <!-- ScrollView 控件3 -->
+        <!-- android:background="@android:drawable/edit_text" 设置滚动条背景颜色为 android内置的背景颜色 @android:drawable/edit_text -->
+        <ScrollView
+            android:id="@+id/view3"
+            android:layout_width="100dip"
+            android:layout_height="120dip"
+            android:background="@android:drawable/edit_text">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="@string/scrollbar_3_text" />
+        </ScrollView>
+    </LinearLayout>
+
+    
+    <!-- ScrollView 控件4 -->
+    <!-- android:background="@android:drawable/edit_text" 设置滚动条背景颜色为 android内置的背景颜色 @android:drawable/edit_text -->
+    <!-- android:scrollbarStyle="outsideOverlay" 设置ScrollView滚动条类型为  outsideOverlay-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ScrollView
+            android:id="@+id/view4"
+            android:layout_width="100dip"
+            android:layout_height="120dip"
+            android:scrollbarStyle="outsideOverlay"
+            android:background="@android:drawable/edit_text">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="@string/scrollbar_3_text" />
+        </ScrollView>
+
+        <!-- ScrollView 控件5 -->
+        <!-- android:background="@android:drawable/edit_text" 设置滚动条背景颜色为 android内置的背景颜色 @android:drawable/edit_text -->
+        <!-- android:scrollbarStyle="outsideInset" 设置ScrollView滚动条类型为  outsideInset-->
+        <ScrollView
+            android:id="@+id/view5"
+            android:layout_width="100dip"
+            android:layout_height="120dip"
+            android:scrollbarStyle="outsideInset"
+            android:background="@android:drawable/edit_text">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="@string/scrollbar_3_text" />
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

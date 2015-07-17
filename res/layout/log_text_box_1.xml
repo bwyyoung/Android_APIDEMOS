@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- android:onClick="selfDestruct" 监听方法二需要添加此属性，其中selfDestruct为自定义监听方法名称-->
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/log_text_box_1_add_text"
+        />
+
+	<!--自定义控件 LogTextBox ，继承自 TextView -->
+    <com.example.android.apis.text.LogTextBox
+        android:id="@+id/text"
+        android:background="@drawable/box"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:scrollbars="vertical"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/log_text_box_1_do_nothing_text"/>
+
+</LinearLayout>

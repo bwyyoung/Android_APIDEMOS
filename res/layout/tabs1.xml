@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 一个TextView对象，背景色为蓝色 -->
+    <TextView
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blue"
+        android:text="@string/tabs_1_tab_1" />
+
+    <!-- 一个TextView对象，背景色为红色 -->
+    <TextView
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/red"
+        android:text="@string/tabs_1_tab_2" />
+
+    <!-- 一个TextView对象，背景色为绿色 -->
+    <TextView
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/green"
+        android:text="@string/tabs_1_tab_3" />
+
+</FrameLayout>
